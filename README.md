@@ -45,12 +45,15 @@ El sistema genera automáticamente los archivos `.txt` necesarios al ejecutar la
 ## 📸 Capturas 
 
 Ventana Principal
+
 <img width="370" height="413" alt="image" src="https://github.com/user-attachments/assets/22cfeb62-1161-4640-bb64-103b10f4ca76" />
 
 Captura de datos y creacion entidad
+
 <img width="744" height="376" alt="image" src="https://github.com/user-attachments/assets/580878cd-f0b3-4a19-bca1-52a35f588f5a" />
 
 Creacion de entrenamientos por categoria
+
 <img width="422" height="226" alt="image" src="https://github.com/user-attachments/assets/6110b465-d9ef-4273-954d-9bcad9bb0156" />
 
 Ventana de reportes 
