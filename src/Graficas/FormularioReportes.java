@@ -258,12 +258,12 @@ public class FormularioReportes extends JFrame {
         panel.add(etFechaD);
         //Lista desplegable Año de inicio
         añoInicio = new JComboBox<>();
-        añoInicio.addItem("2020");
-        añoInicio.addItem("2021");
-        añoInicio.addItem("2022");
-        añoInicio.addItem("2023");
-        añoInicio.addItem("2024");
-        añoInicio.addItem("2025");
+        int anioActual = java.time.Year.now().getValue();
+        //Se repara el Bug para la actualizacion de año de forma automatica
+        for (int i = anioActual - 4; i <= anioActual + 1; i++) {
+            añoInicio.addItem(String.valueOf(i));
+        }
+        
         añoInicio.setBounds(575,20, 65, 25);
         panel.add(añoInicio);
         //Lista desplegable mes de inicio
@@ -297,13 +297,12 @@ public class FormularioReportes extends JFrame {
         panel.add(etFechaH);
         //Lista desplegable Año Final
         añoFinal = new JComboBox<>();
-        añoFinal.addItem("2020");
-        añoFinal.addItem("2021");
-        añoFinal.addItem("2022");
-        añoFinal.addItem("2023");
-        añoFinal.addItem("2024");
-        añoFinal.addItem("2025");
-        añoFinal.setSelectedIndex(5);
+        int anioActual = java.time.Year.now().getValue();
+        //Se repara el Bug para la actualizacion de año de forma automatica
+        for (int i = anioActual - 4; i <= anioActual + 1; i++) {
+            añoFinal.addItem(String.valueOf(i));
+        }
+        añoFinal.setSelectedIndex(4);
         añoFinal.setBounds(575,65, 65, 25);
         panel.add(añoFinal);
         //Lista desplegable mes Final
